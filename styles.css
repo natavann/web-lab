@@ -1,13 +1,14 @@
+/* --- ORIGINAL STYLES --- */
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
-  padding: 0; /* Changed from 2rem to 0 so navbar touches the edges */
+  padding: 0;
   background: #f6f8fa;
+  transition: background 0.3s, color 0.3s; /* Smoothly fades between modes */
 }
 
-/* Navbar Styling */
 .navbar {
-  background-color: #24292f; /* Dark GitHub-style grey */
+  background-color: #24292f; 
   color: white;
   padding: 1rem 2rem;
 }
@@ -23,7 +24,8 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 20px; /* Space between links */
+  gap: 20px; 
+  align-items: center; /* Keeps button aligned with links */
 }
 
 .navbar a {
@@ -36,7 +38,41 @@ body {
   text-decoration: underline;
 }
 
-/* Keep your main content centered */
 main {
   padding: 2rem;
+}
+/* --- New Styles for Feature: CTA Button --- */
+
+.cta-btn {
+  background-color: #0969da;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.cta-btn:hover {
+  background-color: #054da5;
+}
+
+/* --- Dark Theme logic --- */
+
+/* When data-theme is dark, change the body background and text */
+[data-theme="dark"] {
+  background-color: #0d1117; /* GitHub dark mode color */
+  color: #f0f6fc;
+}
+
+/* Make the navbar slightly different in dark mode */
+[data-theme="dark"] .navbar {
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+/* Ensure links stay white or visible */
+[data-theme="dark"] .navbar a {
+  color: #58a6ff;
 }
