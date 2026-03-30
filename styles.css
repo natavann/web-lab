@@ -76,3 +76,13 @@ main {
 [data-theme="dark"] .navbar a {
   color: #58a6ff;
 }
+/* Update this specific block in your CSS */
+[data-theme="dark"] {
+  background-color: #0d1117; 
+  color: #ffffff; /* Pure white for maximum contrast */
+}
+
+[data-theme="dark"] .navbar a {
+  color: #79c0ff; /* Brighter blue for better visibility */
+  text-shadow: 0 0 2px rgba(0,0,0,0.5); /* Adds a "pop" for readability */
+}
