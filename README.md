@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
-A professional web project demonstrating the **Git Flow** methodology. 
+This project was created for educational purposes as part of a DevOps/Git Flow laboratory exercise. 
 
 ## 🛠️ Features
 - **Release Management:** Moving from `develop` to `release/1.0.0` to `main`.
